@@ -1,0 +1,23 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    string str = "Keshav";
+    
+    int length = str.length();
+    
+    for(int i=0;i<length/2;i++){
+        
+        char reversed = str[i];
+        str[i] = str[length-i-1];
+        str[length-i-1] = reversed;
+        
+    }
+    
+    cout<<str;
+
+    return 0;
+}
